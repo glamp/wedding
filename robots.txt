@@ -1,0 +1,2 @@
+# robots.txt for gregandkatie.wedding
+User-agent: *
