@@ -7604,7 +7604,7 @@ body {
 .nav-bordered > li.active > a:focus {
   font-weight: 700;
   color: #685D9F;
-  border-bottom-color: #685D9F;
+  border-bottom-color: #333333;
 }
 .nav-bordered.nav-justified > li + li {
   margin-left: 0;
