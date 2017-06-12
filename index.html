@@ -179,9 +179,9 @@
       <div class="block-foreground">
         <h1 class="block-title text-uppercase">RSVP</h1>
         <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyways.</b></h4>
-        <form class="form-inline">
-          <input class="form-control m-b" placeholder="email address" />
-          <input class="form-control m-b" placeholder="your name" required />
+        <form id="rsvp-form" class="form-inline">
+          <input type="email" class="form-control m-b" placeholder="email address" />
+          <input type="text" class="form-control m-b" placeholder="your name" required />
           <select class="form-control m-b custom-select" required >
             <option>See you there! ☺</option>
             <option>Can't make it ☹</option>
@@ -194,5 +194,14 @@
     <!-- Include jQuery (required) and the JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="public/dist/toolkit.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#rsvp-form").on('submit', function(e) {
+        e.preventDefault();
+        alert("This will go to the Google Sheets of KP's choosing");
+        return false;
+      });
+    });
+    </script>
   </body>
 </html>
