@@ -18,8 +18,31 @@
     <!-- Include the CSS -->
     <link href="public/dist/toolkit-minimal.css" rel="stylesheet" />
 
+    <style>
+      .overlayed {
+        position: fixed;
+        z-index: 99999999;
+        left: 95%;
+        top: 45%;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        background-color: white;
+        border: 1.5px solid #333333;
+      }
+    </style>
+
   </head>
   <body>
+
+    <div class="overlayed" style="top: 35%;"></div>
+    <div class="overlayed" style="top: 40%;"></div>
+    <div class="overlayed" style="top: 45%;"></div>
+    <div class="overlayed" style="top: 50%;"></div>
+    <div class="overlayed" style="top: 55%;"></div>
+    <div class="overlayed" style="top: 60%;"></div>
+    <div class="overlayed" style="top: 65%;"></div>
+
     <nav class="navbar navbar-default navbar-static-top text-uppercase">
       <div class="container">
         <div class="navbar-header">
@@ -37,6 +60,7 @@
           <ul class="nav nav-bordered navbar-nav navbar-right">
             <li class="active"><a href="../minimal/index.html">Wedding</a></li>
             <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
             <li><a target=_blank href="https://www.zola.com/registry/thelamps?preview=true">Registry</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -87,19 +111,19 @@
           <div>
             <h3>Welcome Drinks</h3>
             <p>9pm | Friday, December 8th</p>
-            <p>61 Local / 61 Bergen St, Brooklyn, NY</p>
+            <p>61 Local | 61 Bergen St, Brooklyn, NY</p>
           </div>
           <hr />
           <div>
             <h3>The Main Event</h3>
             <p>5pm | Saturday, December 9th</p>
-            <p>501 Union / 501 Union St, Brooklyn, NY</p>
+            <p>501 Union | 501 Union St, Brooklyn, NY</p>
           </div>
           <hr />
           <div>
             <h3>Good-bye Breakfast</h3>
             <p>11am | Sunday, December 10th</p>
-            <p>1 Hotel Brooklyn Bridge / 60 Furman St, Brooklyn, NY</p>
+            <p>1 Hotel Brooklyn Bridge | 60 Furman St, Brooklyn, NY</p>
           </div>
         </div>
       </div>
@@ -180,8 +204,9 @@
         <h1 class="block-title text-uppercase">RSVP</h1>
         <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyways.</b></h4>
         <form id="rsvp-form" class="form-inline">
-          <input type="email" class="form-control m-b" placeholder="email address" />
-          <input type="text" class="form-control m-b" placeholder="your name" required />
+          <input type="email" class="form-control m-b" placeholder="email address*" />
+          <input type="text" class="form-control m-b" placeholder="your name*" required />
+          <input type="text" class="form-control m-b" placeholder="guest's name" />
           <select class="form-control m-b custom-select" required >
             <option>See you there! ☺</option>
             <option>Can't make it ☹</option>
@@ -195,13 +220,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="public/dist/toolkit.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-      $("#rsvp-form").on('submit', function(e) {
-        e.preventDefault();
-        alert("This will go to the Google Sheets of KP's choosing ☺");
-        return false;
+      $(document).ready(function() {
+        $("#rsvp-form").on('submit', function(e) {
+          e.preventDefault();
+          alert("This will go to the Google Sheets of KP's choosing ☺");
+          return false;
+        });
       });
-    });
+      $(document).scroll(function(evt) {
+        var nOverlayed = $('.overlayed').length;
+        var idx = Math.round(document.body.scrollTop / document.body.offsetHeight * nOverlayed);
+        $('.overlayed').css('background-color', 'white');
+        $('.overlayed').slice(0, idx + 1).css('background-color', '#f0ad4e');
+      });
     </script>
   </body>
 </html>
