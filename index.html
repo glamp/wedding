@@ -290,7 +290,6 @@
       Game.prototype.startGame = function(){
         this.playElement.style.display = "none";
         this.intervalId = setInterval(this.updater, this.updateTime);
-
       };
       Game.prototype.pauseGame = function(){
         clearInterval(this.intervalId);
@@ -300,10 +299,11 @@
       };
       Game.prototype.updateGame = function(){
         this.densityStep += this.density;
-        if(this.densityStep >= 1 && this.balloonsArray.length < 30)
-        {
-          for(var i = 0; i < parseInt(this.densityStep, 10); i++)
-          {
+        if (this.densityStep > 30 && this.balloonsArray.length > 30) {
+          $("#non-ballons").removeClass('hide');
+          $("#balloons").addClass('hide');
+        } else if (this.densityStep >= 1 && this.balloonsArray.length <= 30) {
+          for(var i = 0; i < parseInt(this.densityStep, 10); i++) {
             var tempBalloon = new Balloon(0, -53, randomColor(), 'normal', 150);
             tempBalloon.positionX = tempBalloon.generateRandomXPos();
             var el = document.createElement('div');
@@ -314,6 +314,12 @@
             var index = this.balloonsArray.length;
             el.onclick = function(){
               thiz.score += thiz.balloonsArray[index].points;
+              if (thiz.balloonsArray[index].color=='red') {
+                $("#score-label").css('color', 'yellow');
+                setTimeout(function() {
+                  $("#score-label").css('color', '#fff');
+                }, 500);
+              }
               thiz.updateScore(thiz.score);
               this.parentNode.removeChild(el);
             };
@@ -322,8 +328,8 @@
             tempObj.el = el;
             tempObj.speed = tempBalloon.getRandomSpeed();
             tempObj.points = tempBalloon.points;
+            tempObj.color = tempBalloon.color;
             this.balloonsArray.push(tempObj);
-            //console.log(tempObj.speed);
           }
           this.densityStep = 0;
         }
@@ -365,8 +371,11 @@
         var name = $(this).val();
         var balloonists = [
           'Pete Howard',
+
           'Austin Ogilvie',
+
           'Jeff Lamp',
+
           'Francis Hayes',
 
           'Charlie Pollak',
@@ -377,6 +386,12 @@
           'Pete Swigert',
 
           'Sam Clay',
+
+          'Colin Ristig',
+
+          'Ross Kippenbrock',
+
+
         ];
         if (balloonists.indexOf(name) > -1) {
           giveMeBalloons()
