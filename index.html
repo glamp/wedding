@@ -17,6 +17,7 @@
 
     <!-- Include the CSS -->
     <link href="public/dist/toolkit-minimal.css" rel="stylesheet" />
+    <link href="public/dist/balloons.css" rel="stylesheet" />
 
     <style>
       .overlayed {
@@ -35,184 +36,207 @@
   </head>
   <body>
 
-    <div class="overlayed" style="top: 35%;"></div>
-    <div class="overlayed" style="top: 40%;"></div>
-    <div class="overlayed" style="top: 45%;"></div>
-    <div class="overlayed" style="top: 50%;"></div>
-    <div class="overlayed" style="top: 55%;"></div>
-    <div class="overlayed" style="top: 60%;"></div>
-    <div class="overlayed" style="top: 65%;"></div>
+    <div id="non-ballons">
+      <div class="overlayed" style="top: 35%;"></div>
+      <div class="overlayed" style="top: 40%;"></div>
+      <div class="overlayed" style="top: 45%;"></div>
+      <div class="overlayed" style="top: 50%;"></div>
+      <div class="overlayed" style="top: 55%;"></div>
+      <div class="overlayed" style="top: 60%;"></div>
+      <div class="overlayed" style="top: 65%;"></div>
 
-    <nav class="navbar navbar-default navbar-static-top text-uppercase">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed p-x-0" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <span>KP + Greg</span>
-          </a>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-collapse">
-          <ul class="nav nav-bordered navbar-nav navbar-right">
-            <li class="active"><a href="../minimal/index.html">Wedding</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="https://glamp.github.io/wedding/faq.html">FAQ</a></li>
-            <li><a target=_blank href="https://www.zola.com/registry/thelamps?preview=true">Registry</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div class="block block-inverse text-center block-fill-height">
-      <div class="block-foreground">
-        <h1 class="block-title text-uppercase">We're Getting Married</h1>
-        <h4 class="text-muted"><b>December 9th, 2017 / Brooklyn / NY</b></h4>
-        <h4 class="text-muted"><b>501 Union / Gowanus</b></h4>
-        <button class="btn btn-default btn-outline btn-pill btn-lg m-t">RSVP</button>
-      </div>
-      <div class="block-background">
-        <img src="public/img/luisa-rusche-2229.jpg" width="100%" />
-      </div>
-    </div>
-
-
-    <div class="block text-center">
-      <div class="block-foreground">
-        <h1 class="block-title text-uppercase">Venue</h1>
-        <h4 class="text-muted"><b>501 Union / 501 Union St, Brooklyn, NY</b></h4>
-        <div class="container-fluid">
-          <blockquote class="pull-quote">
-             <p>
-                Located in Gowanus, Brooklyn, the 501 Union building dates back to
-                1916 and once served as a classic car restoration shop. It was
-                 transformed into a private events venue in 2013 and now provides a
-                 unique backdrop for stylish weddings, corporate events, and photo shoots.
-             </p>
-             <p>
-               For traveling to the ceremony, we recommend one of the following:
-               <p class="text-small m-b-0 m-t-0">• Uber/Lyft/Taxi</p>
-               <p class="text-small m-b-0 m-t-0">• Take the F or G train to the Bergen. Walk 5 blocks.</p>
-               <p class="text-small m-b-0 m-t-0">• Take the R stop to Union St. Walk 3 blocks.</p>
-               <i>Pro Tip: If taking the subway, please allow extra time for weekend schedules ☺</i>
-             </p>
-           </blockquote>
-         </div>
-      </div>
-    </div>
-
-    <div class="block block-inverse text-center">
-      <div class="block-foreground">
-        <h1 class="block-title text-uppercase">Weekend Events</h1>
+      <nav class="navbar navbar-default navbar-static-top text-uppercase">
         <div class="container">
-          <div>
-            <h3>Welcome Drinks</h3>
-            <p>9pm | Friday, December 8th</p>
-            <p>61 Local | 61 Bergen St, Brooklyn, NY</p>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed p-x-0" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <span>KP + Greg</span>
+            </a>
           </div>
-          <hr />
-          <div>
-            <h3>The Main Event</h3>
-            <p>5pm | Saturday, December 9th</p>
-            <p>501 Union | 501 Union St, Brooklyn, NY</p>
-          </div>
-          <hr />
-          <div>
-            <h3>Good-bye Breakfast</h3>
-            <p>11am | Sunday, December 10th</p>
-            <p>1 Hotel Brooklyn Bridge | 60 Furman St, Brooklyn, NY</p>
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav nav-bordered navbar-nav navbar-right">
+              <li class="active"><a href="../minimal/index.html">Wedding</a></li>
+              <li><a href="#rsvp">RSVP</a></li>
+              <li><a href="https://glamp.github.io/wedding/faq.html">FAQ</a></li>
+              <li><a target=_blank href="https://www.zola.com/registry/thelamps?preview=true">Registry</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="block block-inverse text-center block-fill-height">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">We're Getting Married</h1>
+          <h4 class="text-muted"><b>December 9th, 2017 / Brooklyn / NY</b></h4>
+          <h4 class="text-muted"><b>501 Union / Gowanus</b></h4>
+          <button class="btn btn-default btn-outline btn-pill btn-lg m-t">RSVP</button>
+        </div>
+        <div class="block-background">
+          <img src="public/img/luisa-rusche-2229.jpg" width="100%" />
+          <!-- <img src="public/img/highlights/Katie&Greg_ChristineHanPhotography-215.jpg" width="100%" /> -->
+        </div>
+      </div>
+
+
+      <div class="block text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">Venue</h1>
+          <h4 class="text-muted"><b>501 Union / 501 Union St, Brooklyn, NY</b></h4>
+          <div class="container-fluid">
+            <blockquote class="pull-quote">
+               <p>
+                  Located in Gowanus, Brooklyn, the 501 Union building dates back to
+                  1916 and once served as a classic car restoration shop. It was
+                   transformed into a private events venue in 2013 and now provides a
+                   unique backdrop for stylish weddings, corporate events, and photo shoots.
+               </p>
+               <p>
+                 For traveling to the ceremony, we recommend one of the following:
+                 <p class="text-small m-b-0 m-t-0">• Uber/Lyft/Taxi</p>
+                 <p class="text-small m-b-0 m-t-0">• Take the F or G train to the Bergen. Walk 5 blocks.</p>
+                 <p class="text-small m-b-0 m-t-0">• Take the R stop to Union St. Walk 3 blocks.</p>
+                 <i>Pro Tip: If taking the subway, please allow extra time for weekend schedules ☺</i>
+               </p>
+             </blockquote>
+           </div>
+        </div>
+      </div>
+
+      <div class="block block-inverse text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">Weekend Events</h1>
+          <div class="container">
+            <div>
+              <h3>Welcome Drinks</h3>
+              <p>9:30pm | Friday, December 8th</p>
+              <p>61 Local | 61 Bergen St, Brooklyn, NY</p>
+            </div>
+            <hr />
+            <div>
+              <h3>The Main Event</h3>
+              <p>5pm | Saturday, December 9th</p>
+              <p>501 Union | 501 Union St, Brooklyn, NY</p>
+            </div>
+            <hr />
+            <div>
+              <h3>Good-bye Breakfast</h3>
+              <p>11am | Sunday, December 10th</p>
+              <p>1 Hotel Brooklyn Bridge | 60 Furman St, Brooklyn, NY</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="block text-center">
-      <h1 class="block-title">Accommodations</h1>
-      <h4 class="text-muted"><b>There are lots of places to stay in NYC. If you're looking to stay close to the venue, here are a few good options.</b></h4>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Brooklyn Bridge Marriott</h3>
-            <p class="p-x">
-              This is a hotel. There are many like it but this one is mine. Without my hotel, I am useless. Without me, my hotel is useless.
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Brooklyn Hilton</h3>
-            <p class="p-x">
-              This is a hotel. There are many like it but this one is mine. Without my hotel, I am useless. Without me, my hotel is useless.
-            </p>
-          </div>
+      <div class="block text-center">
+        <h1 class="block-title">Accommodations</h1>
+        <h4 class="text-muted"><b>There are lots of places to stay in NYC. If you're looking to stay close to the venue, here are a few good options.</b></h4>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3><a href="http://www.marriott.com/hotels/travel/nycbk-new-york-marriott-at-the-brooklyn-bridge/">Brooklyn Bridge Marriott</a></h3>
+              <p class="p-x">333 Adams St, Brooklyn, NY 11201</p>
+              <p class="p-x">(718) 246-7000</p>
+            </div>
+            <div class="col-sm-4">
+              <h3><a href="http://www3.hilton.com/en/hotels/new-york/hilton-brooklyn-new-york-NYCBSHH/index.html">Brooklyn Hilton</a></h3>
+              <p class="p-x">140 Schermerhorn St, Brooklyn, NY 11201</p>
+              <p class="p-x">(718) 834-8800</p>
+            </div>
 
-          <div class="col-sm-4">
-            <h3>AirBnB</h3>
-            <p class="p-x">
-              This is a hotel. There are many like it but this one is mine. Without my hotel, I am useless. Without me, my hotel is useless.
-            </p>
+            <div class="col-sm-4">
+              <h3><a href="https://www.airbnb.com/s/Gowanus--Brooklyn--NY--United-States/homes?allow_override%5B%5D=&checkin=2017-12-08&checkout=2017-12-10&ne_lat=40.69136509860313&ne_lng=-73.98318294885883&room_types%5B%5D=Entire%20home%2Fapt&search_by_map=true&sw_lat=40.67188094742533&sw_lng=-74.00249485376605&zoom=15&s_tag=FG-zwD3-">AirBnB</a></h3>
+              <p class="p-x">We suggest staying in Cobble Hill (where we live!), Carroll Gardens, Brooklyn Heights, Gowanus, or Park Slope.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="zola" class="block block-inverse text-center">
-      <div class="block-foreground">
-        <h1 class="block-title text-uppercase">Registry</h1>
-        <h4 class="text-muted</b>"><b>
-          Our registry is provided by Zola. If you'd like to give us something,
-          you can find a wide array of gifts by clicking the button below.
-        </h4>
-        <a href="https://www.zola.com/registry/thelamps?preview=true" class="btn btn-default btn-outline btn-lg m-t">Zola</a>
+      <div id="zola" class="block block-inverse text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">Registry</h1>
+          <h4 class="text-muted">
+            Our registry is provided by Zola. If you'd like to give us something,
+            you can find a wide array of gifts by clicking the button below.
+          </h4>
+          <a href="https://www.zola.com/registry/thelamps?preview=true" class="btn btn-default btn-outline btn-lg m-t">Zola</a>
+        </div>
       </div>
-    </div>
 
     <div class="block text-center">
       <div class="block-foreground">
         <h1 class="block-title text-uppercase">Photos</h1>
-        <h4 class="text-muted"><b>Look how much fun we are!</b></h4>
+        <h4 class="text-muted"><b>Can't wait to see you in Brooklyn!</b></h4>
         <div class="container-fluid">
-          <div class="row">
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/jesse-schoff-56768.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/josh-felise-36093.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/wesley-tingey-178030.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/ariana-prestes-6922.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/jesse-schoff-56768.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/josh-felise-36093.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/wesley-tingey-178030.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/ariana-prestes-6922.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/jesse-schoff-56768.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/josh-felise-36093.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/wesley-tingey-178030.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/ariana-prestes-6922.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/jesse-schoff-56768.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/josh-felise-36093.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/wesley-tingey-178030.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/ariana-prestes-6922.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/jesse-schoff-56768.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/josh-felise-36093.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/wesley-tingey-178030.jpg" /></div>
-            <div class="p-y col-sm-3"><img width="100%" src="public/img/ariana-prestes-6922.jpg" /></div>
+            <!-- row 1 -->
+            <div class="row">
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/110.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/172.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/183.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/212.jpg" /></div>
+            </div>
+            <!-- row 2 -->
+            <div class="row">
+              <div class="col-sm-3 row">
+                <br />
+                <div class="p-y col-sm-12"><img width="100%" src="public/img/highlights/picks/179.jpg" /></div>
+                <div class="p-y col-sm-12"><img width="100%" src="public/img/highlights/picks/204.jpg" /></div>
+              </div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/137.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/127.jpg" /></div>
+              <div class="col-sm-3 row">
+                <div class="p-y"><img width="100%" src="public/img/highlights/picks/205.jpg" /></div>
+                <div class="p-y"><img width="100%" src="public/img/highlights/picks/215.jpg" /></div>
+              </div>
+            </div>
+            <!-- row 3 -->
+            <div class="row">
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/169.jpg" /></div>
+              <div class="row col-sm-3">
+                <div class="p-y"><img width="100%" src="public/img/highlights/picks/217.jpg" /></div>
+                <!-- <div class="p-y"><img width="100%" src="public/img/highlights/picks/219.jpg" /></div> -->
+                <div class="p-y"><img width="100%" src="public/img/highlights/picks/221.jpg" /></div>
+              </div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/226.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/134.jpg" /></div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div id="rsvp" class="block block-inverse text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">RSVP</h1>
+          <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyways.</b></h4>
+          <form id="rsvp-form" class="form-inline">
+            <input type="email" class="form-control m-b" placeholder="email address*" />
+            <input id="your-name" type="text" class="form-control m-b" placeholder="your name*" required />
+            <input type="text" class="form-control m-b" placeholder="guest's name" />
+            <select class="form-control m-b custom-select" required >
+              <option>See you there! ☺</option>
+              <option>Can't make it ☹</option>
+            </select>
+            <button class="btn btn-default m-b">Submit</button>
+          </form>
         </div>
       </div>
     </div>
 
-    <div id="rsvp" class="block block-inverse text-center">
-      <div class="block-foreground">
-        <h1 class="block-title text-uppercase">RSVP</h1>
-        <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyways.</b></h4>
-        <form id="rsvp-form" class="form-inline">
-          <input type="email" class="form-control m-b" placeholder="email address*" />
-          <input type="text" class="form-control m-b" placeholder="your name*" required />
-          <input type="text" class="form-control m-b" placeholder="guest's name" />
-          <select class="form-control m-b custom-select" required >
-            <option>See you there! ☺</option>
-            <option>Can't make it ☹</option>
-          </select>
-          <button class="btn btn-default m-b">Submit</button>
-        </form>
+    <div id="balloons" class="hide">
+      <div class="balloon red"></div>
+      <div id="canvas">
+      </div>
+      <div id="score-label">
+        Score: <span id="score-count">0</span>
+      </div>
+      <div id="start-btn">
+        <span>Play</span>
+      </div>
+      <div id="pause-btn">
       </div>
     </div>
 
@@ -233,6 +257,145 @@
         $('.overlayed').css('background-color', 'white');
         $('.overlayed').slice(0, idx + 1).css('background-color', '#f0ad4e');
       });
+
+      function randomColor() {
+        var colors = [
+          'green',
+          'red',
+        ];
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      function Game(){
+        this.isPaused = true;
+        this.score = null;
+        this.speed = null;
+        this.density = null;
+        this.remainingLives = 5;
+        this.playElement = document.getElementById('start-btn');
+        this.scoreElement = document.getElementById('score-container');
+        this.livesElement = document.getElementById('lives-container');
+        this.canvasElement = document.getElementById('canvas');
+        this.timer = null;
+        this.startedTime = null; //time from start game
+        this.intervalId = null;
+        this.updateTime = null;
+        this.densityStep = null;
+        this.balloonsArray = null;
+        var thiz = this;
+        this.updater = function(){
+          thiz.updateGame();
+        };
+      }
+      Game.prototype.startGame = function(){
+        this.playElement.style.display = "none";
+        this.intervalId = setInterval(this.updater, this.updateTime);
+
+      };
+      Game.prototype.pauseGame = function(){
+        clearInterval(this.intervalId);
+      };
+      Game.prototype.updateScore = function(score){
+        this.scoreElem.innerHTML = score;
+      };
+      Game.prototype.updateGame = function(){
+        this.densityStep += this.density;
+        if(this.densityStep >= 1 && this.balloonsArray.length < 30)
+        {
+          for(var i = 0; i < parseInt(this.densityStep, 10); i++)
+          {
+            var tempBalloon = new Balloon(0, -53, randomColor(), 'normal', 150);
+            tempBalloon.positionX = tempBalloon.generateRandomXPos();
+            var el = document.createElement('div');
+            el.className = 'balloon '+ tempBalloon.color;
+            el.style.left = tempBalloon.positionX+'px';
+            el.style.bottom = tempBalloon.positionY+'px';
+            var thiz = this;
+            var index = this.balloonsArray.length;
+            el.onclick = function(){
+              thiz.score += thiz.balloonsArray[index].points;
+              thiz.updateScore(thiz.score);
+              this.parentNode.removeChild(el);
+            };
+            this.canvasElement.appendChild(el);
+            var tempObj = {};
+            tempObj.el = el;
+            tempObj.speed = tempBalloon.getRandomSpeed();
+            tempObj.points = tempBalloon.points;
+            this.balloonsArray.push(tempObj);
+            //console.log(tempObj.speed);
+          }
+          this.densityStep = 0;
+        }
+        for(var i = 0; i < this.balloonsArray.length; i++)
+        {
+          this.balloonsArray[i].el.style.bottom = (parseInt(this.balloonsArray[i].el.style.bottom, 10)+(3+this.balloonsArray[i].speed))+'px';
+        }
+      };
+      Game.prototype.endGame = function(){
+
+      };
+      Game.prototype.initGame = function(){
+        this.isPaused = true;
+        this.score = 0;
+        this.speed = 0.01;
+        this.density = 1000/8000;
+        this.remainingLives = 5;
+        this.updateTime = 50;
+        this.densityStep = 1;
+        this.balloonsArray = [];
+        this.scoreElem = document.getElementById('score-count');
+
+      };
+      function Balloon(x, y, color, type, points){
+        this.positionX = x;
+        this.positionY = y;
+        this.color = color;
+        this.type = type;
+        this.points = points * (color=='red' ? 2 : 1);
+      }
+      Balloon.prototype.getRandomSpeed = function(){
+        return Math.floor((this.color=='red' ? 2 : 1) * Math.random() * 201)/100;
+      };
+      Balloon.prototype.generateRandomXPos = function(){
+        return Math.floor(Math.random() * $(document).width());
+      };
+
+      $('#your-name').on('change', function(e) {
+        var name = $(this).val();
+        var balloonists = [
+          'Pete Howard',
+          'Austin Ogilvie',
+          'Jeff Lamp',
+          'Francis Hayes',
+
+          'Charlie Pollak',
+          'Charles Pollak',
+
+          'Maria Li',
+          'Peter Swigert',
+          'Pete Swigert',
+
+          'Sam Clay',
+        ];
+        if (balloonists.indexOf(name) > -1) {
+          giveMeBalloons()
+        }
+      });
+
+      function giveMeBalloons() {
+        $("#non-ballons").addClass('hide');
+        $("#balloons").removeClass('hide');
+        var a = new Game();
+        a.initGame();
+        document.getElementById('start-btn').onclick = function(){
+          a.startGame();
+        };
+      }
+
+      // giveMeBalloons();
+
+
     </script>
   </body>
 </html>
