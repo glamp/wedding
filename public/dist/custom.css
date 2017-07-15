@@ -18,3 +18,26 @@
 .navbar-right {
   margin-right: 5px;
 }
+
+#ss-submit {
+    display: block;
+  width: 240px;
+  box-sizing: border-box;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background: #99154e;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem #6c0f37;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+
+}
