@@ -18,20 +18,7 @@
     <!-- Include the CSS -->
     <link href="public/dist/toolkit-minimal.css" rel="stylesheet" />
     <link href="public/dist/balloons.css" rel="stylesheet" />
-
-    <style>
-      .overlayed {
-        position: fixed;
-        z-index: 99999999;
-        left: 95%;
-        top: 45%;
-        width: 12px;
-        height: 12px;
-        border-radius: 2px;
-        background-color: white;
-        border: 1.5px solid #333333;
-      }
-    </style>
+    <link href="public/dist/custom.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -46,7 +33,7 @@
       <div class="overlayed" style="top: 65%;"></div>
 
       <nav class="navbar navbar-default navbar-static-top text-uppercase">
-        <div class="container">
+        <div class="small-container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed p-x-0" data-toggle="collapse" data-target="#navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -62,8 +49,8 @@
             <ul class="nav nav-bordered navbar-nav navbar-right">
               <li class="active"><a href="../minimal/index.html">Wedding</a></li>
               <li><a href="#rsvp">RSVP</a></li>
-              <li><a href="https://glamp.github.io/wedding/faq.html">FAQ</a></li>
               <li><a target=_blank href="https://www.zola.com/registry/thelamps?preview=true">Registry</a></li>
+              <li><a href="https://glamp.github.io/wedding/faq.html">FAQ</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,7 +58,7 @@
 
       <div class="block block-inverse text-center block-fill-height">
         <div class="block-foreground">
-          <h1 class="block-title text-uppercase">We're Getting Married</h1>
+          <h1 class="block-title text-uppercase">We're Getting Married!</h1>
           <h4 class="text-muted"><b>December 9th, 2017 / Brooklyn / NY</b></h4>
           <h4 class="text-muted"><b>501 Union / Gowanus</b></h4>
           <button class="btn btn-default btn-outline btn-pill btn-lg m-t">RSVP</button>
@@ -82,11 +69,47 @@
         </div>
       </div>
 
+      <div class="block text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">Pose on the nose stick</h1>
+          <h4 class="text-muted"><b>Back dooring Freddy P. tube zone big windup.</b></h4>
+          <div class="container-fluid">
+            <blockquote class="pull-quote">
+               <p>
+                 Best section blitz shred sets amped. Pipeline Dane dawn patrol, vertical hook Trestles muscle float flow surfline. Jumbled knee high double up over the reef outer bar power gouge cutties coffee. Whippin da yams coffee heavy section cheater5 soft lip flow Jeffreys Bay. New school nice little, swamped turds in the lineup, crumble shaka, drifting the tail.
+               </p>
+               <p>
+                 Leg rope, steeze double overhead paddle backside attack psych carve heavy turning on stomps it. Bumpy surf dry hair paddle out wax the stick ripper Kerrzy shutting down backhand attack.
+               </p>
+             </blockquote>
+           </div>
+        </div>
+      </div>
+
+      <div class="block block-inverse text-center">
+        <div class="block-foreground">
+          <h1 class="block-title text-uppercase">Weekend Activities</h1>
+          <div class="container">
+            <div>
+              <h3>Welcome Drinks</h3>
+              <p>9:30pm | Friday, December 8th</p>
+              <p>61 Local | 61 Bergen St, Brooklyn, NY</p>
+            </div>
+            <hr />
+            <div>
+              <h3>The Main Event</h3>
+              <p>5pm | Saturday, December 9th</p>
+              <p>501 Union | 501 Union St, Brooklyn, NY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div class="block text-center">
         <div class="block-foreground">
           <h1 class="block-title text-uppercase">Venue</h1>
-          <h4 class="text-muted"><b>501 Union / 501 Union St, Brooklyn, NY</b></h4>
+          <h4 class="text-muted"><b><a target="_blank" href="http://www.501union.com/">501 Union</a> / <a target="_blank" href="https://goo.gl/maps/TEBwUScNCm52">501 Union St, Brooklyn, NY</a></b></h4>
           <div class="container-fluid">
             <blockquote class="pull-quote">
                <p>
@@ -104,31 +127,6 @@
                </p>
              </blockquote>
            </div>
-        </div>
-      </div>
-
-      <div class="block block-inverse text-center">
-        <div class="block-foreground">
-          <h1 class="block-title text-uppercase">Weekend Events</h1>
-          <div class="container">
-            <div>
-              <h3>Welcome Drinks</h3>
-              <p>9:30pm | Friday, December 8th</p>
-              <p>61 Local | 61 Bergen St, Brooklyn, NY</p>
-            </div>
-            <hr />
-            <div>
-              <h3>The Main Event</h3>
-              <p>5pm | Saturday, December 9th</p>
-              <p>501 Union | 501 Union St, Brooklyn, NY</p>
-            </div>
-            <hr />
-            <div>
-              <h3>Good-bye Breakfast</h3>
-              <p>11am | Sunday, December 10th</p>
-              <p>1 Hotel Brooklyn Bridge | 60 Furman St, Brooklyn, NY</p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -160,10 +158,9 @@
         <div class="block-foreground">
           <h1 class="block-title text-uppercase">Registry</h1>
           <h4 class="text-muted">
-            Our registry is provided by Zola. If you'd like to give us something,
-            you can find a wide array of gifts by clicking the button below.
+            If you'd like to give us something, you can find a wide array of gifts by clicking the button below.
           </h4>
-          <a href="https://www.zola.com/registry/thelamps?preview=true" class="btn btn-default btn-outline btn-lg m-t">Zola</a>
+          <a href="https://www.zola.com/registry/thelamps?preview=true" class="btn btn-default btn-outline btn-lg m-t">Greg and Katie's Registry</a>
         </div>
       </div>
 
@@ -175,9 +172,10 @@
             <!-- row 1 -->
             <div class="row">
               <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/110.jpg" /></div>
-              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/172.jpg" /></div>
-              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/183.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_2564.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_2258.jpg" /></div>
               <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/212.jpg" /></div>
+
             </div>
             <!-- row 2 -->
             <div class="row">
@@ -201,8 +199,27 @@
                 <!-- <div class="p-y"><img width="100%" src="public/img/highlights/picks/219.jpg" /></div> -->
                 <div class="p-y"><img width="100%" src="public/img/highlights/picks/221.jpg" /></div>
               </div>
-              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/226.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_0367.jpg" /></div>
               <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/134.jpg" /></div>
+            </div>
+            <div class="row">
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/172.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/DSC_0242.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/DSC_0082.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/DSC_0184.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/183.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/DSC_0411.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/DSC_0497.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_0006.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_0406.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_1192.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_1333.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_1971.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_2026.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_2492.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/IMG_2637.jpg" /></div>
+              <div class="p-y col-sm-3"><img width="100%" src="public/img/highlights/picks/226.jpg" /></div>
+
             </div>
           </div>
         </div>
@@ -211,7 +228,7 @@
       <div id="rsvp" class="block block-inverse text-center">
         <div class="block-foreground">
           <h1 class="block-title text-uppercase">RSVP</h1>
-          <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyways.</b></h4>
+          <h4 class="text-muted"><b>Coming? Great! Not coming? Bummer, but let us know anyway.</b></h4>
           <form id="rsvp-form" class="form-inline">
             <input type="email" class="form-control m-b" placeholder="email address*" />
             <input id="your-name" type="text" class="form-control m-b" placeholder="your name*" required />
@@ -242,6 +259,7 @@
 
     <!-- Include jQuery (required) and the JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/kombai/freewall/master/freewall.js"></script>
     <script src="public/dist/toolkit.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -251,6 +269,10 @@
           return false;
         });
       });
+
+      var wall = new Freewall("#image-gallery");
+      wall.fitWidth();
+
       $(document).scroll(function(evt) {
         var nOverlayed = $('.overlayed').length;
         var idx = Math.round(document.body.scrollTop / document.body.offsetHeight * nOverlayed);
