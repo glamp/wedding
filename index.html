@@ -188,22 +188,13 @@
 
 
 
-          <form id="form1" name="form1" class="form-inline wufoo topLabel page1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://gregandkatie.wufoo.com/embed/z1qc9n7e08iuhph/def/embedKey=z1qc9n7e08iuhph787149&amp;entsource=&amp;referrer=#public">
-
-            <input name="Field3" id="your-name" type="text" class="form-control m-b" placeholder="your name*" required>
-            <input name="Field4" type="text" class="form-control m-b" placeholder="guest's name">
-            <select name="Field6" class="form-control m-b custom-select" required>
-              <option>---</option>
+          <form id="gform" method="POST" class="form-inline" action="https://script.google.com/macros/s/AKfycbwY77X9gabP2I0H2_RljzrgV5Mv9JScAYDs3td7UvdVvXRzWKI/exec">
+            <input name="name" id="your-name" type="text" class="form-control m-b" placeholder="your name*" required>
+            <input name="guest" id="guest-name" type="text" class="form-control m-b" placeholder="guest's name">
+            <select name="attending" id="attending" class="form-control m-b custom-select" required>
   						<option value="yes">I'll be there!</option>
   						<option value="no">Sorry, can't make it</option>
             </select>
-
-            <!-- wufoo hidden stuff -->
-            <input type="hidden" name="currentPage" id="currentPage" value="x6zRyf9XKnOzsfzJYG18O1lT90wsbPJnz7V930evawQ=">
-            <input type="hidden" id="idstamp" name="idstamp" value="k/9vdeYxmUyXy5Mo9FU/k+D0K3YhCGzieKLhAP7QaVg=">
-    				<input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}">
-    				<input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
-            <!-- / wufoo hidden stuff -->
 
             <button class="btn btn-default m-b">Submit</button>
           </form>
@@ -232,32 +223,34 @@
     <script src="public/dist/toolkit.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#form1").on('submit', function(e) {
+        $("#gform").on('submit', function(e) {
           e.preventDefault();
           var data = new FormData();
-
-          $("#form1 input").each(function(i, field) {
-            data.append(field.name, field.value);
-          });
-
-          $("#form1 select").each(function(i, field) {
-            data.append(field.name, field.value);
-          });
+          data.append('name', $("#your-name").val());
+          data.append('guest', $("#guest-name").val());
+          data.append('attending', $("#attending").val());
 
           $.ajax({
-              url: 'https://gregandkatie.wufoo.com/embed/z1qc9n7e08iuhph/def/embedKey=z1qc9n7e08iuhph787149&amp;entsource=&amp;referrer=#public',
+              url: 'https://script.google.com/macros/s/AKfycbwY77X9gabP2I0H2_RljzrgV5Mv9JScAYDs3td7UvdVvXRzWKI/exec',
               data: data,
               cache: false,
               contentType: false,
               processData: false,
               type: 'POST',
               success: function(data){
-                console.log(JSON.stringify(data));
-                $("#rsvp").html('<h1 class="block-title text-uppercase">Thanks! You\'re good to go</h1>');
+                if (data.result=="success") {
+                  if ($("#attending").val()=="yes") {
+                    $("#rsvp").html("<h1>Great! We'll see you there.</h1>");
+                  } else {
+                    $("#rsvp").html("<h1>Bummer! Thanks for letting us know.</h1>");
+                  }
+                } else {
+                  $("#rsvp").append("<p>Whoops! Something went wrong. Mind trying that again?</p>");
+                }
               },
               error: function(data){
                 console.log(JSON.stringify(data));
-                $("#rsvp").html('<h1 class="block-title text-uppercase">Thanks! You\'re good to go</h1>');
+                $("#rsvp").append("<p>Whoops! Something went wrong. Mind trying that again?</p>");
               }
           });
           return false;
