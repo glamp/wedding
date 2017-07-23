@@ -58,10 +58,9 @@
 
       <div class="block block-inverse text-center block-fill-height">
         <div class="block-foreground">
-          <h1 class="block-title text-uppercase">We're Getting Married!</h1>
-          <h4 class="text-muted"><b>December 9th, 2017 / Brooklyn / NY</b></h4>
-          <h4 class="text-muted"><b>501 Union / Gowanus</b></h4>
-          <button class="btn btn-default btn-outline btn-pill btn-lg m-t">RSVP</button>
+          <h1 style="color: black;" class="block-title text-uppercase">We're Getting Married!</h1>
+          <h4 style="color: black;" class="text-muted"><b>December 9th, 2017 / Brooklyn / NY</b></h4>
+          <h4 style="color: black;" class="text-muted"><b>501 Union / Gowanus</b></h4>
         </div>
         <div class="block-background">
           <img src="public/img/luisa-rusche-2229.jpg" width="100%" />
@@ -105,32 +104,7 @@
         </div>
       </div>
 
-
       <div class="block text-center">
-        <div class="block-foreground">
-          <h1 class="block-title text-uppercase">Venue</h1>
-          <h4 class="text-muted"><b><a target="_blank" href="http://www.501union.com/">501 Union</a> / <a target="_blank" href="https://goo.gl/maps/TEBwUScNCm52">501 Union St, Brooklyn, NY</a></b></h4>
-          <div class="container-fluid">
-            <blockquote class="pull-quote">
-               <p>
-                  Located in Gowanus, Brooklyn, the 501 Union building dates back to
-                  1916 and once served as a classic car restoration shop. It was
-                   transformed into a private events venue in 2013 and now provides a
-                   unique backdrop for stylish weddings, corporate events, and photo shoots.
-               </p>
-               <p>
-                 For traveling to the ceremony, we recommend one of the following:
-                 <p class="text-small m-b-0 m-t-0">• Uber/Lyft/Taxi</p>
-                 <p class="text-small m-b-0 m-t-0">• Take the F or G train to the Bergen. Walk 5 blocks.</p>
-                 <p class="text-small m-b-0 m-t-0">• Take the R stop to Union St. Walk 3 blocks.</p>
-                 <i>Pro Tip: If taking the subway, please allow extra time for weekend schedules ☺</i>
-               </p>
-             </blockquote>
-           </div>
-        </div>
-      </div>
-
-      <div class="block block-inverse text-center">
         <h1 class="block-title">Accommodations</h1>
         <h4 class="text-muted"><b>There are lots of places to stay in NYC. If you're looking to stay close to the venue, here are a few good options.</b></h4>
         <div class="container-fluid">
@@ -154,7 +128,7 @@
         </div>
       </div>
 
-      <div id="zola" class="block text-center">
+      <div id="zola" class="block block-inverse text-center">
         <div class="block-foreground">
           <h1 class="block-title text-uppercase">Registry</h1>
           <h4 class="text-muted">
@@ -214,18 +188,26 @@
 
 
 
-          <form id="rsvp-form" class="form-inline" action="https://docs.google.com/forms/d/1FAIpQLSe8USeLsg81j6KuYFmBKQe-rwZYoS0Usw4iUHf2y5VfeyL-9g/formResponse?embedded=true" method="POST">
-            <input type="email" class="form-control m-b" placeholder="email address*" name="entry.1168836194"/>
-            <input id="your-name" type="text" class="form-control m-b" placeholder="your name*" required name="entry.199228326"/>
-            <input type="text" class="form-control m-b" placeholder="guest's name" name="entry.1064715297 " />
-            <select class="form-control m-b custom-select" required name="entry.2094948305" >
-              <option>See you there! ☺</option>
-              <option>Can't make it ☹</option>
+          <form id="form1" name="form1" class="form-inline wufoo topLabel page1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://gregandkatie.wufoo.com/embed/z1qc9n7e08iuhph/def/embedKey=z1qc9n7e08iuhph787149&amp;entsource=&amp;referrer=#public">
+
+            <input name="Field3" id="your-name" type="text" class="form-control m-b" placeholder="your name*" required>
+            <input name="Field4" type="text" class="form-control m-b" placeholder="guest's name">
+            <select name="Field6" class="form-control m-b custom-select" required>
+              <option>---</option>
+  						<option value="yes">I'll be there!</option>
+  						<option value="no">Sorry, can't make it</option>
             </select>
+
+            <!-- wufoo hidden stuff -->
+            <input type="hidden" name="currentPage" id="currentPage" value="x6zRyf9XKnOzsfzJYG18O1lT90wsbPJnz7V930evawQ=">
+            <input type="hidden" id="idstamp" name="idstamp" value="k/9vdeYxmUyXy5Mo9FU/k+D0K3YhCGzieKLhAP7QaVg=">
+    				<input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}">
+    				<input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
+            <!-- / wufoo hidden stuff -->
+
             <button class="btn btn-default m-b">Submit</button>
           </form>
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSe8USeLsg81j6KuYFmBKQe-rwZYoS0Usw4iUHf2y5VfeyL-9g/formResponse?embedded=true" id="mG61Hd" method="post" name="mG61Hd" target="_self">
-          </form>
+
         </div>
       </div>
     </div>
@@ -249,13 +231,38 @@
     <script src="public/js/freewall.js"></script>
     <script src="public/dist/toolkit.js"></script>
     <script type="text/javascript">
-      // $(document).ready(function() {
-      //   $("#rsvp-form").on('submit', function(e) {
-      //     e.preventDefault();
-      //     alert("This will go to the Google Sheets of KP's choosing ☺");
-      //     return false;
-      //   });
-      // });
+      $(document).ready(function() {
+        $("#form1").on('submit', function(e) {
+          e.preventDefault();
+          var data = new FormData();
+
+          $("#form1 input").each(function(i, field) {
+            data.append(field.name, field.value);
+          });
+
+          $("#form1 select").each(function(i, field) {
+            data.append(field.name, field.value);
+          });
+
+          $.ajax({
+              url: 'https://gregandkatie.wufoo.com/embed/z1qc9n7e08iuhph/def/embedKey=z1qc9n7e08iuhph787149&amp;entsource=&amp;referrer=#public',
+              data: data,
+              cache: false,
+              contentType: false,
+              processData: false,
+              type: 'POST',
+              success: function(data){
+                console.log(JSON.stringify(data));
+                $("#rsvp").html('<h1 class="block-title text-uppercase">Thanks! You\'re good to go</h1>');
+              },
+              error: function(data){
+                console.log(JSON.stringify(data));
+                $("#rsvp").html('<h1 class="block-title text-uppercase">Thanks! You\'re good to go</h1>');
+              }
+          });
+          return false;
+        });
+      });
 
       var wall = new Freewall("#image-gallery");
       wall.fitWidth();

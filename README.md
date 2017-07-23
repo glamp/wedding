@@ -1,1 +1,19 @@
 # wedding
+- [x] lighten up cover photo so whiteness is brighter
+- [x] Married!  < add exclamation
+- [x] change font per invitation
+- [-] between bridge and venue, add section that's like an intro...
+- [x] weekend events before venue
+- [x] weekend activities instead of events
+- [x] remove breakfast
+- [x] change "zola" to Greg and Katies' Registry
+- [x] add other photos to collage
+- [x]  RSVP add "but please let us know anyway"
+- [ ]  link to google sheet
+- [x]  switch rsvp order to name and guest name
+- [x]  move FAQ button all the way to right
+- [x]  move "KP and GREG" over to left more
+- [x]  fix links in FAQ
+- [x]  What should I wear: Holiday cocktail? Short, long, suit, tie - anything works. KP will be in white and Greg will wear a suit, the rest is up to you.
+- [x]  FAQ - add "Wait, where is this happening again?" Put a link to the venue on homepage and to google maps.
+- [x] fun things to do -- add brooklyn botanic garden, hillside dog park

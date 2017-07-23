@@ -16,7 +16,15 @@
   padding-right: 10px;
 }
 .navbar-right {
-  margin-right: 5px;
+  margin-right: 50px;
+}
+
+.navbar {
+  font-size: 120%;
+}
+
+ul, li, p {
+  font-size: 110%;
 }
 
 #ss-submit {
