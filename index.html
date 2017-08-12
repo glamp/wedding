@@ -144,6 +144,7 @@
           <form id="gform" method="POST" class="form-inline" action="https://script.google.com/macros/s/AKfycbwY77X9gabP2I0H2_RljzrgV5Mv9JScAYDs3td7UvdVvXRzWKI/exec">
             <input name="name" id="your-name" type="text" class="form-control m-b" placeholder="your name*" required>
             <input name="guest" id="guest-name" type="text" class="form-control m-b" placeholder="guest's name">
+            <inpute name="balloons-score" id="balloons-score" type="hidden" />
             <select name="attending" id="attending" class="form-control m-b custom-select" required>
               <option value="yes">I'll be there! 😃</option>
               <option value="no">Sorry, can't make it 😞</option>
@@ -234,6 +235,7 @@
           data.append('name', $("#your-name").val());
           data.append('guest', $("#guest-name").val());
           data.append('attending', $("#attending").val());
+          data.append('balloons', $("#balloons-score").val());
 
           $.ajax({
               url: 'https://script.google.com/macros/s/AKfycbwY77X9gabP2I0H2_RljzrgV5Mv9JScAYDs3td7UvdVvXRzWKI/exec',
@@ -310,6 +312,7 @@
       };
       Game.prototype.updateScore = function(score){
         this.scoreElem.innerHTML = score;
+        $("#balloons-score").val(score);
       };
       Game.prototype.updateGame = function(){
         this.densityStep += this.density;
@@ -391,9 +394,14 @@
           'Jeff Lamp',
 
           'Francis Hayes',
+          'Drew Harmata',
 
           'Charlie Pollak',
           'Charles Pollak',
+
+          'John Gelb',
+          'Sam Hecht',
+
 
           'Maria Li',
           'Peter Swigert',
@@ -404,7 +412,6 @@
           'Colin Ristig',
 
           'Ross Kippenbrock',
-
 
         ];
         if (balloonists.indexOf(name) > -1) {
