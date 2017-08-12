@@ -19,12 +19,16 @@
   margin-right: 50px;
 }
 
-.navbar {
-  font-size: 120%;
-}
-
 ul, li, p {
   font-size: 110%;
+}
+
+.navbar > li {
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 18px;
 }
 
 #ss-submit {
